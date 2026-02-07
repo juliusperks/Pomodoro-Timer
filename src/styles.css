@@ -1,0 +1,71 @@
+:root { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+body { margin: 0; background: #0b0c10; color: #eaf0ff; }
+.container { max-width: 760px; margin: 0 auto; padding: 16px; }
+h1 { font-size: 28px; margin: 10px 0 16px; }
+h2 { font-size: 18px; margin: 0 0 10px; opacity: 0.9; }
+
+.card {
+  background: #12141c;
+  border: 1px solid #2a2f45;
+  border-radius: 14px;
+  padding: 16px;
+  margin: 14px 0;
+}
+
+.row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; justify-content: space-between; }
+.pills { display: flex; gap: 8px; flex-wrap: wrap; }
+.pill {
+  border: 1px solid #394065;
+  background: #0f1220;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+.time {
+  font-size: 72px;
+  text-align: center;
+  margin: 18px 0;
+  letter-spacing: 1px;
+}
+
+.modeTabs { display: flex; gap: 8px; flex-wrap: wrap; }
+.tab {
+  border: 1px solid #394065;
+  background: #0f1220;
+  color: inherit;
+  border-radius: 10px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+.tab[aria-pressed="true"] { border-color: #7aa2ff; }
+
+.controls { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.btn {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #7aa2ff;
+  background: #0f1220;
+  color: inherit;
+  cursor: pointer;
+  min-width: 110px;
+}
+.btn.secondary { border-color: #394065; }
+
+.form { display: grid; gap: 10px; }
+label { display: grid; gap: 6px; font-size: 14px; }
+input[type="number"] {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #394065;
+  background: #0f1220;
+  color: inherit;
+}
+
+.note { font-size: 13px; opacity: 0.85; line-height: 1.4; }
+
+.srOnly { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+@media (max-width: 480px) {
+  .time { font-size: 56px; }
+}
