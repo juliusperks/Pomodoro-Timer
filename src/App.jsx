@@ -206,7 +206,7 @@ export default function App() {
         </div>
 
         <div className="modeTabs" aria-label="Session type selector">
-          {(["work", "shortBreak", "longBreak"] as const).map((m) => (
+          {["work", "shortBreak", "longBreak"].map((m) => (
             <button
               key={m}
               type="button"
